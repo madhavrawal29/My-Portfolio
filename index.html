@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3db7901e7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- :::::::::::::::::::::::::::::::::::::::: H E A D E R  S E C T I O N :::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+    <div id="header">
+        <div class="container">
+            <nav id="nav-bar">
+                <h1 class="sub-title"><span>Portfolio</span> </h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <img src="Images/moon.png" id="icon">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <h1> <span> Hi, </span> I'm<br> Madhav <span>  Rawal </span> </h1> -->
+                <h1>Hi, I'm <br> <span> Madhav Rawal </span> </h1>
+                <h4>And I'm a Web Developer </h4> <br>
+                <p>This is my official portfolio website to showcase ma all works related to <br> web development and UI
+                    design.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- :::::::::::::::::::::::::::::::::::::::::: A B O U T   S E C T I O N :::::::::::::::::::::::::::::::::::::::::::
+    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Completed diploma in Advance Computer Applicaion (ADCA), looking forward to an opportunity
+                        for working in a dynamic, challenging environment, where I can
+                        utilize my skills for developing my career and for the growth of the organization & currently
+                        working as an Intern in Suventure Private Limited. I love to make new designs, outlook &
+                        websites. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- ********** Skills ********** -->
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+
+                            <li><span>HTML </span> </li>
+                            <div class="progress-line"> <span per="80%"
+                                    style="max-width: 80%; background-color: brown;"> </span></div>
+
+                            <li><span> CSS </span></li>
+                            <div class="progress-line"><span per="66%"
+                                    style="max-width: 66%; background-color: rgb(237, 237, 33);"></span></div>
+
+                            <li><span> JavaSript </span></li>
+                            <div class="progress-line"><span per="60%"
+                                    style="max-width: 60%; background-color: rgb(22, 168, 226);"></span></div>
+
+                            <li><span> C++ </span></li>
+                            <div class="progress-line"><span per="63%"
+                                    style="max-width: 63%; background-color: rgb(181, 87, 181);"></span></div>
+
+                            <li><span> Python </span></li>
+                            <div class="progress-line"><span per="70%"
+                                    style="max-width: 70%; background-color: rgb(255, 171, 16);"></span></div>
+
+                            <li><span> SQL Server </span></li>
+                            <div class="progress-line"><span per="75%"
+                                    style="max-width: 75%; background-color: rgb(8, 177, 8);"></span></div>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- ********** Experience ********** -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span> Fresher </span> <br> Fresher </li>
+                        </ul>
+                    </div>
+
+                    <!-- ********** Education ********** -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> 2022 </span> <br> ADCA (Advance Diploma in Computer Applicaion) </li>
+                            <li><span> 2022 </span> <br> Post Graduation </li>
+                            <li><span> 2020 </span> <br> Graduation </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- :::::::::::::::::::::::::::::::::::::::: S E R V I C E  S E C T I O N ::::::::::::::::::::::::::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <!-- <hr width="32%" color="#2895b0"> -->
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Like to work on Portfolio Websites, Blog Websites & E-Commerce Websites with high performance and
+                        blazing fast speed.</p>
+                    <a href="#">Read more...</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Design & Editing</h2>
+                    <p>I also do some designs like Posters Design, Banners/Covers & Landing Pages with some unique
+                        looks. </p>
+                    <a href="#">Read more...</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-window-maximize"></i>
+                    <h2>Support</h2>
+                    <p> Support Customers with basic technical support for current and past software realeses & can
+                        support by Help Desk,Office-Excel-Word.</p>
+                    <a href="#">Read more...</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- :::::::::::::::::::::::::::::::::::::: P O R T F O L I O  S E C T I O N ::::::::::::::::::::::::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="Images/work-1.webp" alt="">
+                    <div class="layer">
+                        <h3> Small Business Websites </h3>
+                        <p>We make websites, every website should be built with two primary goals. Firstly, it needs to
+                            work across all devices. Secondly, it needs to be fast as possible.</p>
+                        <a href="My-Works/Project-1/Todo_List.html" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.webp" alt="">
+                    <div class="layer">
+                        <h3> E-Commerce Website </h3>
+                        <p>We also make eCommerce websites that creates endless possibilities and new markets to
+                            explore, and cultivate, for new sales and revenue opportunities.</p>
+                        <a href="My-Works/Project-2/GymWebsite.html" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <!-- <img src="Images/work-3.jpg" alt=""> -->
+                    <img src="Images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3> Online Shopping Website </h3>
+                        <p>Online shopping has proved its worth in the past few years as the most convenient shopping
+                            method, and people are moving more towards it now.</p>
+                        <a href="My-Works/Project-3/To-Do-List.html" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="My-Works/Project-2/GymWebsite.html" target="_blank" class="btn"> See More </a>
+        </div>
+    </div>
+
+    <!-- :::::::::::::::::::::::::::::::::::::::: C O N T A C T  S E C T I O N ::::::::::::::::::::::::::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+
+                    <p> <a href="mailto: madhavrawal29122000@gmail.com" target="_blank"> <i
+                                class="fa-solid fa-paper-plane"> </i> </a> madhavrawal29122000@gmail.com</p>
+                    <p> <a href="tel: 9458561730" target="_blank"> <i class="fa-solid fa-square-phone"> </i> </a>
+                        9458561730 </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"> </i> </a>
+                        <a href="https://instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"> </i> </a>
+                        <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter"> </i> </a>
+                        <a href="https://linkedin.com/" target="_blank"> <i class="fa-brands fa-linkedin"> </i> </a>
+                    </div>
+                    <a href="CV/My-CV.pdf" class="btn btn2 btn3" target="_blank" id="cv">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 btn4">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @Madhav Rawal <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- ****************************************
+                    SCROLL UP BUTTON 
+         ****************************************-->
+    <div class="scroll-btn">
+        <a href="#"><img src="Images/up.webp" width="52px"></a>
+    </div>
+
+</body>
+
+</html>

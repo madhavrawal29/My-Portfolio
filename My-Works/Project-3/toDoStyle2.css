@@ -1,0 +1,132 @@
+body {
+    background: url('pexels-craig-adderley-1563356.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+ul li:nth-child(odd) {
+
+    background: rgb(223, 152, 121);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.list {
+    position: fixed;
+
+    background: rgb(221, 144, 111);
+    border-radius: 12px;
+    width: 350px;
+}
+
+.list h2 {
+    font-size: 30px;
+    background-color: rgba(6, 46, 40, 0.994);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: rgb(195, 188, 134);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.list ul {
+    position: relative;
+
+
+}
+
+.list ul li {
+    color: rgb(46, 75, 73);
+    position: relative;
+    list-style: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(43, 27, 27, 0.172);
+}
+
+.list ul li:last-child {
+    border-bottom: none;
+}
+
+.list ul li label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-out;
+    font-size: 17px;
+    height: 40px;
+    padding: 20px;
+}
+
+.list ul li label:hover {
+
+    background: rgb(199, 175, 163);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.list ul li label input {
+    visibility: hidden;
+    appearance: absolute;
+}
+
+.list ul li label p {
+    position: absolute;
+}
+
+.list ul li label span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(220, 213, 213);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li label span::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-40deg);
+}
+
+.list ul li label input:checked~p {
+    text-decoration: line-through;
+    color: rgb(209, 192, 192);
+    background-color: rgb(121, 118, 118);
+    width: 18.5em;
+    height: 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.list ul li label input:checked~span {
+    background-color: rgb(64, 91, 109);
+    border: 1px solid rgb(31, 107, 158);
+    transform: rotate(360deg);
+    transition: 0.3s ease-in-out;
+}
+
+
+.list ul li label input:checked~span::before {
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}

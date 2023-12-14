@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+    background: url("Images/pexels-victor-freitas-841130.jpg") no-repeat center center/cover;
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    /* border: 5px solid red; */
+}
+
+.left img {
+    width: 65px;
+    filter: invert(100%);
+}
+
+.left div {
+    line-height: 29px;
+    margin-left: -15px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.mid {
+    display: block;
+    width: 50%;
+    margin: 45px auto;
+
+    /* border: 5px solid green; */
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    right: 34px;
+
+    /* border: 5px solid yellow; */
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 30px 15px;
+    font-size: 20px;
+}
+
+.navbar li:hover {
+    transform: scale(1.09);
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+}
+
+.btn {
+    /* font-family: 'Ubuntu', sans-serif; */
+    margin: 0px 8px;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background-color: rgb(66, 176, 210);
+}
+
+.container {
+    top: 60px;
+    border: 2px solid white;
+    width: 40%;
+    margin: 150px 70px;
+    border-radius: 15px;
+    padding: 50px;
+    /* text-align: center; */
+}
+
+.form-group input {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    display: block;
+    width: 480px;
+    padding: 2px;
+    /* border: 2px solid black; */
+    margin: 8px auto;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    color: grey;
+    font-style: italic;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+#btn1 {
+    display: block;
+    width: 83%;
+    margin: 15px auto;
+    font-size: 20px;
+}
+
